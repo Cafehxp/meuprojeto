@@ -17,6 +17,7 @@ int main(){
     printf("digite 1 para ler o arquivo, 0 para parar o codigo\n");
     scanf("%d", &entrada);
 
+    
     switch (entrada)
     {
     case 1:
@@ -28,7 +29,8 @@ int main(){
         fclose(ler);
         printf("lido: %s", conteudo);
         break;
-    case 2:
+    case 0:
+    printf("codigo finalizado");
     return 0;
     default:
         break;
